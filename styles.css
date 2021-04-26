@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+}
+
+@font-face {
+  font-family: customCursiveFont;
+  src: url('./fonts/Chomsky.otf');
+}
+
+.hidden {
+  display: none;
+}
+
+.links {
+  display: flex !important;
+  justify-content: space-between !important;
+}
+
+ul {
+  width: 100%;
+  justify-content: space-between;
+}
+
+ul li {
+  cursor: pointer;
+}
+
+.pageTitle {
+  width: 100%;
+  height: auto;
+  margin-top: 25px;
+  color: black;
+  font-family: customCursiveFont;
+  font-size: 3.5rem;
+}
+
+@media screen and (max-width: 992px) {
+  .pageTitle {
+    font-size: 3.5rem;
+  }
+
+}
+
+@media screen and (max-width: 992px) {
+  .pageTitle {
+    font-size: 3rem;
+    display: none;
+  }
+
+  .dateClass {
+    padding: 0px 0 !important;
+    font-size: 13px;
+    border-top: 1px dotted #959595 !important;
+    border-bottom: 1px dotted#959595 !important;
+  }
+
+  .dateClass p {
+    margin-bottom: 0;
+  }
+
+  .navBrandClass {
+    display: inline !important;
+    font-family: customCursiveFont;
+    font-weight: bold;
+    font-size: 3rem;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .pageTitle {
+    font-size: 2.5rem;
+    margin-bottom: 0 !important;
+  }
+
+  .dateClass {
+    padding: 0px 0 !important;
+    font-size: 15px;
+    border-top: 1px dotted #959595 !important;
+    border-bottom: 1px dotted#959595 !important;
+  }
+
+  .dateClass p {
+    margin-bottom: 0;
+  }
+
+  .navBrandClass {
+    font-size: 2rem;
+  }
+}
+
+.dateClass {
+  padding: 48px 0;
+  font-size: 13px;
+}
+
+.navBrandClass {
+  display: none;
+}
